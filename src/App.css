@@ -1,0 +1,68 @@
+html {
+  transition: background-color 1s;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  background-color: yellowgreen;
+}
+
+#root {
+  width:80%;
+  margin: 0 10%;
+}
+
+.quotebox {
+  height:100%;
+  width:100%;
+  border :1px rgb(145, 126,126) solid;
+  border-radius: 10px;
+  text-align: right;
+  max-width: 45rem;
+}
+
+#quote{
+  margin:40px;
+  text-align: left;
+}
+
+.fadeIn {
+  height: 100%;
+  opacity: 0;
+  display: block;
+  animation: slidein 1s ease-out forwards;
+}
+
+
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+#author {
+  margin: 20px;
+  font-style: italic;
+}
+
+#newquote {
+  margin:20px;
+  position: relative;
+  border-radius: 5px;
+  height: 35px;
+  width: 100px;
+  font-weight: 700;
+  font-family: "Segoe UI", "Tahoma", "Geneva", "Verdana", sans-serif;
+  color: white;
+}
+
